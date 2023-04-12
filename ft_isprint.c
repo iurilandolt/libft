@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/12 13:30:49 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/12 23:56:21 by rlandolt         ###   ########.fr       */
+/*   Created: 2023/04/12 23:45:23 by rlandolt          #+#    #+#             */
+/*   Updated: 2023/04/12 23:56:39 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int ft_isprint(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	else
-		return (0);
+    if(c >= 32 && c <= 126)
+        return(1);
+    else
+        return(0);
 }
