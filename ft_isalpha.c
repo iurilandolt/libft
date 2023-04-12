@@ -6,11 +6,11 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 13:30:49 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/12 13:41:27 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/12 15:47:12 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_isalpha(int c)
 {

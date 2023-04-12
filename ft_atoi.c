@@ -10,21 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
-	long int	n;
-	int	sign;
+	long int		n;
+	int				sign;
 
 	sign = 1;
 	n = 0;
 	while ((nptr >= '\t' && *nptr <= '\r') || *nptr == ' ')
 		*nptr++;
-	if( *nptr == '+' || *nptr == '-')
-		if(*nptr == '-')
+	if (*nptr == '+' || *nptr == '-')
+		if (*nptr == '-')
 			sign = -1;
-	while(ft_isdigit(*nptr))
+	while (ft_isdigit(*nptr))
 	{
 		n = n * 10 + (*nptr++ - '0');
 		if (n > 2147483648)
@@ -34,9 +34,6 @@ int	ft_atoi(const char *nptr)
 			else
 				return (0);
 		}
-
 	}
-	return(n * sign);
-
+	return (n * sign);
 }
-
