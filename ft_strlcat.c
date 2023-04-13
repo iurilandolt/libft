@@ -3,34 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rlandolt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 12:20:03 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/03/15 10:29:45 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/13 13:40:42 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*
-#include <stdio.h>
-*/
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
-{
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	dcount;
-	unsigned int	scount;
 
-	i = 0;
-	j = 0;
-	while (dest[i] != '\0')
-		i++;
-	dcount = i;
-	while (src[j] != '\0')
-		j++;
-	scount = j;
+#include "libft.h"
+#include <stdio.h>
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
+{
+	size_t	dcount;
+	size_t	scount;
+	size_t	i;
+	size_t	j;
+
+	dcount = ft_strlen(dest);
+	scount = ft_strlen(src);
+	if (dcount == 0)
+		return(scount);
 	if (size <= dcount)
 		return (size + scount);
+	i = dcount;
 	j = 0;
-	while (src[j] != '\0' && size > i + 1)
+	while (*(src + j) && size > i + 1)
 	{
 		dest[i] = src[j];
 		i++;
@@ -44,10 +42,11 @@ int main(void)
 {
         char str_1[] = "123";
         char str_2[] = "456789";
-        unsigned int n = 10;
+        size_t n = 10;
 
 	printf("%s\n", str_2);
         ft_strlcat(str_2, str_1, n);
         printf("%s\n", str_2);
-	printf("\nResult: %i \n", ft_strlcat(str_2, str_1, n));
-}*/
+	printf("\nResult: %zu \n", ft_strlcat(str_2, str_1, n));
+}
+*/

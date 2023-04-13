@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:49:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/13 11:24:45 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/13 13:40:52 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,9 @@
     void *ft_memset(void *s, int c, size_t len);
     void bzero(void *s, size_t n);
     void *memcpy(void *dest, const void *src, size_t n);
-
-
+    void *memmove(void *dest, const void *src, size_t n);
+    size_t	ft_strlcpy(char *dest, const char *src, size_t size);
+    size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
 
 #endif
