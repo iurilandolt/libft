@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:49:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/13 00:51:14 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/13 11:24:45 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@
     int	ft_isdigit(int c);
     int ft_isprint(int c);
     size_t	ft_strlen(const char *s);
-    void *memset(void *s, int c, size_t len);
+    void *ft_memset(void *s, int c, size_t len);
+    void bzero(void *s, size_t n);
+    void *memcpy(void *dest, const void *src, size_t n);
 
 
 
