@@ -6,7 +6,7 @@
 #    By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 22:52:58 by rlandolt          #+#    #+#              #
-#    Updated: 2023/04/13 23:21:13 by rlandolt         ###   ########.fr        #
+#    Updated: 2023/04/13 23:48:07 by rlandolt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,11 +39,8 @@ $(NAME): $(OBJ)
 
 all: $(NAME)
 
-bonus: $(B_OBJ)
-	ar -rcs $(NAME) $(B_OBJ)
-
 clean:
-	rm -f $(OBJ) $(B_OBJ)
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
