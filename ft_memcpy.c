@@ -6,13 +6,13 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 11:15:45 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/13 11:24:21 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/13 23:13:51 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *memcpy(void *dest, const void *src, size_t n)
+void *ft_memcpy(void *dest, const void *src, size_t n)
 {
     size_t  i;
 
