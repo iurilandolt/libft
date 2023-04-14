@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 12:20:03 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/13 14:21:35 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/14 13:06:40 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	j = 0;
 	while (*(src + j) && size > i + 1)
 	{
-		dest[i] = src[j];
+		*(dest + i) = *(src + j);
 		i++;
 		j++;
 	}
-	dest[i] = '\0';
+	*(dest + i);
 	return (dcount + scount);
 }
 /*

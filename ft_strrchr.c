@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rlandolt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/09 18:10:40 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/03/12 19:10:35 by rlandolt         ###   ########.fr       */
+/*   Created: 2023/04/14 12:53:16 by rlandolt          #+#    #+#             */
+/*   Updated: 2023/04/14 13:06:42 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str);
+#include "libft.h"
 
-char	*ft_strlowcase(char *str)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 
-	i = 0;
-	while (str[i] != '\0')
+	i = ft_strlen(str) + 1;
+	if (!c)
+		return ((char *)str + (i - 1));
+	while (i >= 0)
 	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] = str[i] + 32;
-		i++;
+		if(*(str + i) == (char)c)
+			return ((char *)str + i);
+		i--;
 	}
-	return (str);
+	return(NULL);
 }

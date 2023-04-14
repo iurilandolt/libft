@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rlandolt <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/09 18:00:52 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/03/13 11:30:55 by rlandolt         ###   ########.fr       */
+/*   Created: 2023/04/14 12:23:19 by rlandolt          #+#    #+#             */
+/*   Updated: 2023/04/14 13:36:47 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str);
+#include "libft.h"
 
-char	*ft_strupcase(char *str)
+int	ft_toupper(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] = str[i] - 32;
-		i++;
-	}
-	return (str);
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
 }
