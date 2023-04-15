@@ -6,13 +6,13 @@
 #    By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 22:52:58 by rlandolt          #+#    #+#              #
-#    Updated: 2023/04/14 13:24:58 by rlandolt         ###   ########.fr        #
+#    Updated: 2023/04/15 14:14:26 by rlandolt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
+#TARGET
 NAME = libft.a
-
+#PREREQUESITES
 SRC = ft_atoi.c \
 	ft_isalnum.c \
 	ft_isalpha.c \
@@ -36,7 +36,7 @@ SRC = ft_atoi.c \
 	ft_strrchr.c \
 	ft_strncmp.c \
 	ft_strnstr.c \
-
+#RECIPÉ
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 

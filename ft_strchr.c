@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 12:46:48 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/14 12:50:49 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/15 14:21:50 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char *ft_strchr(const char *str, int c)
 	while(*str)
 	{
 		if (*str == (char)c)
-			return ((char)c);
+			return ((char *)str);
 		str++;
 	}
 	if (*str == (char)c)

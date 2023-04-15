@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:02:15 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/14 13:06:37 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/15 14:24:35 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 		str2++;
 		n--;
 	}
-	return ((unsigned char *)*str1 - (unsigned char *)*str2);
+	return (*(unsigned char *)str1 - *(unsigned char *)str2);
 }
