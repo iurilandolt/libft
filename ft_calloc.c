@@ -1,45 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/15 14:32:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/15 15:29:09 by rlandolt         ###   ########.fr       */
+/*   Created: 2023/04/15 15:21:06 by rlandolt          #+#    #+#             */
+/*   Updated: 2023/04/15 15:30:31 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *str)
+void	*ft_calloc(size_t nitems, size_t size)
 {
-	char	*dest;
-	size_t	size;
+	void	*mblock;
 
-	size = ft_strlen(str) + 1;
-	dest = (char *)malloc(sizeof(char) * size);
-	if (!dest)
+	mblock = (void *)malloc(size * nitems);
+	if (!mblock)
 		return (NULL);
-	ft_memcpy(dest, str, size);
-	return (dest);
+	ft_memset(mblock, 0, size * nitems);
+	return (mblock);
 }
-
-/*
-	int	len;
-	int	i;
-	char	*dest;
-
-	len = ft_strlen(str);
-	dest = (char *)malloc(sizeof(char) * (len + 1));
-	if (!dest)
-		return (NULL);
-	i = 0;
-	while (*str)
-	{
-		*(dest + i) = *(str + i);
-		i++;
-	}
-	*(dest + i) = '\0';
-	return (dest);
-*/

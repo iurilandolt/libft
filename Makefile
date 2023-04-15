@@ -6,7 +6,7 @@
 #    By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 22:52:58 by rlandolt          #+#    #+#              #
-#    Updated: 2023/04/15 14:47:21 by rlandolt         ###   ########.fr        #
+#    Updated: 2023/04/15 15:22:17 by rlandolt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SRC = ft_atoi.c \
 	ft_strncmp.c \
 	ft_strnstr.c \
 	ft_strdup.c \
+	ft_calloc.c \
 #RECIPÉ
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
