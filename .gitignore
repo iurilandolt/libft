@@ -1,4 +1,5 @@
 *.o
+*.out
 libft.a
 *.swp
 .DS_Store

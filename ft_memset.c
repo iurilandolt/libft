@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 00:18:45 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/13 23:46:39 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/16 00:26:44 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memset(void *s, int c, size_t len)
         s++;
         len--;
 
-	}	
+	}
     return(s);
 }
+
+//tested
