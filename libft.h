@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:49:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/15 14:34:37 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/15 16:37:15 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@
 	char	*ft_strchr(const char *str, int c);
 	char	*ft_strrchr(const char *str, int c);
 	char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+	char	*ft_substr(char const *str, unsigned int start, size_t len);
+	char	*ft_strjoin(char const *str1, char const *str2);
 	char	*ft_strdup(const char *string);
     void	*ft_memcpy(void *dest, const void *src, size_t n);
     void	*ft_memmove(void *dest, const void *src, size_t n);
@@ -41,6 +43,7 @@
 	void	*ft_memchr(const void *str, int c, size_t n);
 	int	ft_memcmp(const void *str1, const void *str2, size_t n);
     void	ft_bzero(void *s, size_t n);
+	void	*ft_calloc(size_t nitems, size_t size);
 
 
 
