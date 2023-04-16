@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 16:12:00 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/15 16:43:04 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/16 02:01:34 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,4 @@ char	*ft_strjoin(char const *str1, char const *str2)
 	dest[i] = '\0';
 	return (dest);
 }
+//tested
