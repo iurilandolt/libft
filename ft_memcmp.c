@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:15:39 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/14 13:22:38 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/16 01:47:43 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,5 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	}
 	return(0);
 }
+
+//tested

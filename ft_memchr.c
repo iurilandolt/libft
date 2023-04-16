@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:09:30 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/14 13:14:17 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/16 01:45:08 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,5 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (NULL);
 }
+
+//tested

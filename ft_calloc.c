@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 15:21:06 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/15 15:30:31 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/16 01:45:18 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,4 @@ void	*ft_calloc(size_t nitems, size_t size)
 	ft_memset(mblock, 0, size * nitems);
 	return (mblock);
 }
+//tested

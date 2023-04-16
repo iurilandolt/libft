@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 11:27:03 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/13 23:13:57 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/16 01:54:18 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,5 @@ void *ft_memmove(void *dest, const void *src, size_t n)
         }
     return(dest);
 }
+
+//tested

@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 14:32:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/15 15:29:09 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/16 01:58:26 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,22 +24,4 @@ char	*ft_strdup(const char *str)
 	ft_memcpy(dest, str, size);
 	return (dest);
 }
-
-/*
-	int	len;
-	int	i;
-	char	*dest;
-
-	len = ft_strlen(str);
-	dest = (char *)malloc(sizeof(char) * (len + 1));
-	if (!dest)
-		return (NULL);
-	i = 0;
-	while (*str)
-	{
-		*(dest + i) = *(str + i);
-		i++;
-	}
-	*(dest + i) = '\0';
-	return (dest);
-*/
+//tested
