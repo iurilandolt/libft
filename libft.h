@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:49:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/17 12:36:13 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 13:58:36 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ char	*ft_substr(char const *str, unsigned int start, size_t len);
 char	*ft_strjoin(char const *str1, char const *str2);
 char	*ft_strtrim(char const *str, char const *set);
 char	*ft_strdup(const char *string);
+char	**ft_split(char const *str, char c);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t len);
