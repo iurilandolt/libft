@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 12:20:03 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/17 11:56:39 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 13:09:54 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,23 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	dcount;
-	size_t	scount;
 	size_t	i;
 	size_t	j;
 
-	dcount = ft_strlen(dest);
-	scount = ft_strlen(src);
-	if (dcount == 0)
-		return (scount);
-	if (size <= dcount)
-		return (size + scount);
-	i = dcount;
+	if (!dest && !size)
+		return (0);
+	i = 0;
 	j = 0;
-	while (*(src + j) && size > i + 1)
-	{
-		*(dest + i) = *(src + j);
+	while (*(dest + i) && i < size)
 		i++;
+	while (*(src + j) && (i + j + 1) < size)
+	{
+		*(dest + i + j) = *(src + j);
 		j++;
 	}
-	*(dest + i) = '\0';
-	return (dcount + scount);
+	if (i != size)
+		*(dest + i + j) = '\0';
+	return (i + ft_strlen(src));
 }
 /*
 *** stack smashing detected ***: terminated
