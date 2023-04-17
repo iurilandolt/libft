@@ -6,17 +6,44 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 15:43:38 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/16 02:45:29 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 12:06:16 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
 char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
-	char	*subs;
+	char			*subs;
+	size_t			i;
+
+	if (!str)
+		return (NULL);
+	if (ft_strlen(str) <= start)
+		return (ft_strdup(""));
+	if (len > (ft_strlen(str) + 1) - start)
+	{
+		len = ft_strlen(str) - start;
+		subs = (char *)malloc(sizeof(char) * (len + 1));
+		if (!subs)
+			return (NULL);
+	}
+	else
+		subs = (char *)malloc(sizeof(char) * (len + 1));
+	if (!subs)
+		return (NULL);
+	i = -1;
+	while (++i < len)
+		*(subs + i) = *(str + start + i);
+	*(subs + i) = '\0';
+	return (subs);
+}
+/*
+char	*ft_substr(char const *str, unsigned int start, size_t len)
+{
+	char			*subs;
 	unsigned int	strsize;
-	size_t	i;
+	size_t			i;
 
 	i = 0;
 	strsize = ft_strlen(str);
@@ -28,8 +55,8 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	{
 		len = strsize - start;
 		subs = (char *)malloc(sizeof(char) * (len + 1));
-	if (!subs)
-		return (NULL);
+		if (!subs)
+			return (NULL);
 	}
 	else
 		subs = (char *)malloc(sizeof(char) * (len + 1));
@@ -44,4 +71,4 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	*(subs + i) = '\0';
 	return (subs);
 }
-//tested
+*/

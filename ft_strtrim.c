@@ -6,16 +6,16 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 20:05:57 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/16 03:13:48 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 11:59:38 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *str, char const *set)
+char	*ft_strtrim(char const *str, char const *set)
 {
-	size_t start;
-	size_t end;
+	size_t	start;
+	size_t	end;
 
 	if (!str)
 		return (NULL);

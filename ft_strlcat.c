@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 12:20:03 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/16 02:18:27 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 11:56:39 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dcount = ft_strlen(dest);
 	scount = ft_strlen(src);
 	if (dcount == 0)
-		return(scount);
+		return (scount);
 	if (size <= dcount)
 		return (size + scount);
 	i = dcount;

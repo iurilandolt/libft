@@ -6,15 +6,15 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 12:46:48 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/16 02:50:45 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 11:55:01 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
-	while(*str)
+	while (*str)
 	{
 		if (*str == (char)c)
 			return ((char *)str);
@@ -22,7 +22,6 @@ char *ft_strchr(const char *str, int c)
 	}
 	if (*str == (char)c)
 		return ((char *)str);
-	return(NULL);
+	return (NULL);
 }
 //tested
-

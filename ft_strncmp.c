@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:02:15 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/16 02:30:56 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 11:57:57 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	if (n == 0)
 		return (0);
-	while((*str1 || *str2) && (n > 1) && (*str1 == *str2))
+	while ((*str1 || *str2) && (n > 1) && (*str1 == *str2))
 	{
 		str1++;
 		str2++;

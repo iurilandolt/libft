@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:45:23 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/12 23:56:39 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 11:41:31 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int ft_isprint(int c)
 {
-    if(c >= 32 && c <= 126)
-        return(1);
-    else
-        return(0);
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
 }

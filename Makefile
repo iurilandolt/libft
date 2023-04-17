@@ -6,13 +6,15 @@
 #    By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 22:52:58 by rlandolt          #+#    #+#              #
-#    Updated: 2023/04/16 03:09:23 by rlandolt         ###   ########.fr        #
+#    Updated: 2023/04/17 11:36:05 by rlandolt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#TARGET
 NAME = libft.a
-#PREREQUESITES
+
+CC = cc
+CFLAGS = -Wall -Werror -Wextra
+
 SRC = ft_atoi.c \
 	ft_isalnum.c \
 	ft_isalpha.c \
@@ -39,12 +41,8 @@ SRC = ft_atoi.c \
 	ft_strdup.c \
 	ft_substr.c \
 	ft_strjoin.c \
-	ft_strtrim.c
+	ft_strtrim.c \
 	ft_calloc.c \
-	ft_split.c \
-#RECIPÉ
-CC = cc
-CFLAGS = -Wall -Werror -Wextra
 
 OBJ = $(SRC:.c=.o)
 
