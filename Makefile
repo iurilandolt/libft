@@ -6,7 +6,7 @@
 #    By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 22:52:58 by rlandolt          #+#    #+#              #
-#    Updated: 2023/04/17 13:58:52 by rlandolt         ###   ########.fr        #
+#    Updated: 2023/04/17 14:57:39 by rlandolt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,8 @@ SRC = ft_atoi.c \
 	ft_strtrim.c \
 	ft_calloc.c \
 	ft_split.c \
+	ft_itoa.c \
+	ft_strmapi.c \
 
 OBJ = $(SRC:.c=.o)
 

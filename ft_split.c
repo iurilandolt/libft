@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 03:02:53 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/17 14:06:45 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/17 14:36:33 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,13 +70,16 @@ char	**ft_split(char const *str, char c)
 		while (*(str + i) && *(str + i) != c)
 			i++;
 		if (j < i)
-			split[str_i++] = substr_cpy(&str[j], (i - j) + 1);
+			*(split + str_i++) = substr_cpy(&str[j], (i - j) + 1);
 	}
 	*(split + str_i) = NULL;
 	return (split);
 }
 
 /*
+
+split[str_i++] = substr_cpy(&str[j], (i - j) + 1);
+
 static int	is_delimeter(char str, char c)
 {
 	if (str == c)
