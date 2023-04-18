@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 03:02:53 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/18 13:48:18 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/18 18:57:05 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,65 +75,3 @@ char	**ft_split(char const *str, char c)
 	*(split + str_i) = NULL;
 	return (split);
 }
-
-/*
-
-split[str_i++] = substr_cpy(&str[j], (i - j) + 1);
-
-static int	is_delimeter(char str, char c)
-{
-	if (str == c)
-		return (1);
-	else
-		return (0);
-}
-
-static int	substr_count(const char *str, char c)
-{
-	int	count;
-
-	count = 0;
-	while (*str)
-	{
-		while (*str && ft_strchr(str, c) != NULL)
-			str++;
-		if (*str && ft_strchr(str, c) == NULL)
-			count++;
-		while (*str && ft_strchr(str, c) == NULL)
-			str++;
-	}
-	return (count);
-}
-
-static int	substr_count(const char *str, char c)
-{
-	int	count;
-
-	count = 0;
-	while (*str)
-	{
-		while (*str && is_delimeter(*str, c))
-			str++;
-		if (*str && !is_delimeter(*str, c))
-			count++;
-		while (*str && !is_delimeter(*str, c))
-			str++;
-	}
-	return (count);
-}
-
-int count_substrings(const char *str, char delimiter)
-{
-    int count = 1; // Initialize count to 1 to handle empty strings correctly
-    while (*str) {
-        if (*str == delimiter) {
-            count++;
-        }
-        str++;
-    }
-    if (*(str - 1) == delimiter) {
-        count--;
-    }
-    return count;
-}
-*/
