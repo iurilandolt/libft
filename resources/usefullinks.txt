@@ -1,3 +1,5 @@
 https://stackoverflowteams.com/c/42network/questions/1604/1605?newreg=377e07ddd3c546ad86df7acb5c6f7648
 
 https://www.gnu.org/software/make/manual/make.html#Reading
+
+https://www.geeksforgeeks.org/what-is-linked-list/
