@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 12:53:16 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/17 13:16:28 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/18 13:49:12 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-//tested

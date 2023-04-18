@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 20:05:57 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/17 11:59:38 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/18 13:49:17 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ char	*ft_strtrim(char const *str, char const *set)
 		end--;
 	return (ft_substr(str, start, (end - start) + 1));
 }
-//tested

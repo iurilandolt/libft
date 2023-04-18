@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 12:38:49 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/17 11:57:17 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/18 13:48:51 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		*(dest + i) = '\0';
 	return (ft_strlen(src));
 }
-//tested

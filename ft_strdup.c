@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 14:32:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/16 01:58:26 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/18 13:48:29 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,3 @@ char	*ft_strdup(const char *str)
 	ft_memcpy(dest, str, size);
 	return (dest);
 }
-//tested
