@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:49:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/17 16:46:32 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/18 02:11:39 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,15 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <limits.h>
 # include <stddef.h>
+
+# define INT_MIN -2147483648
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int		ft_atoi(const char *nptr);
 char	*ft_itoa(int n);

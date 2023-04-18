@@ -6,14 +6,11 @@
 #    By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/13 22:52:58 by rlandolt          #+#    #+#              #
-#    Updated: 2023/04/17 16:47:14 by rlandolt         ###   ########.fr        #
+#    Updated: 2023/04/18 01:39:22 by rlandolt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-
-CC = cc
-CFLAGS = -Wall -Werror -Wextra
 
 SRC = ft_atoi.c \
 	ft_isalnum.c \
@@ -52,15 +49,25 @@ SRC = ft_atoi.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 
+B_SRC = \
+
+CC = cc
+CFLAGS = -Wall -Werror -Wextra
+
 OBJ = $(SRC:.c=.o)
+
+B_OBJ = $(B_SRC:.c=.o)
 
 $(NAME): $(OBJ)
 	ar -rcs $@ $(OBJ)
 
 all: $(NAME)
 
+bonus: $(B_OBJ)
+	ar -rcs $(NAME) $(B_OBJ)
+
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(B_OBJ)
 
 fclean: clean
 	rm -f $(NAME)
