@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 16:39:49 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/18 01:31:43 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/18 13:48:04 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + '0', fd);
 }
-
-/*
-limits.h is it cheat?
-*/
