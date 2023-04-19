@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 15:43:38 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/19 14:10:39 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/19 14:11:38 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,32 +38,3 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	*(subs + i) = '\0';
 	return (subs);
 }
-
-/*
-char	*ft_substr(char const *str, unsigned int start, size_t len)
-{
-	char			*subs;
-	size_t			i;
-
-	if (!str)
-		return (NULL);
-	if (ft_strlen(str) <= start)
-		return (ft_strdup(""));
-	if (len > ((ft_strlen(str) + 1) - start))
-	{
-		len = (ft_strlen(str)) - start;
-		subs = (char *)malloc(sizeof(char) * (len + 1));
-		if (!subs)
-			return (NULL);
-	}
-	else
-		subs = (char *)malloc(sizeof(char) * (len + 1));
-	if (!subs)
-		return (NULL);
-	i = -1;
-	while (++i < len)
-		*(subs + i) = *(str + start + i);
-	*(subs + i) = '\0';
-	return (subs);
-}
-*/
