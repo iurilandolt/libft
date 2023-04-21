@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:01:20 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/18 13:47:01 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/19 11:45:41 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;
 
-	while (*lst)
+	if (lst && del)
 	{
-		tmp = (*lst);
-		*lst = (*lst)->next;
-		ft_lstdelone(tmp, del);
+		while (*lst)
+		{
+			tmp = (*lst);
+			*lst = (*lst)->next;
+			ft_lstdelone(tmp, del);
+		}
 	}
 }
