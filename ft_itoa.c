@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:11:22 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/18 13:46:51 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/21 23:09:55 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,6 @@ char	*ft_itoa(int n)
 		size--;
 	}
 	if (sign == -1)
-		str[0] = '-';
+		*str = '-';
 	return (str);
 }

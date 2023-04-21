@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 12:20:03 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/18 13:48:46 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/21 23:10:35 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		*(dest + i + j) = '\0';
 	return (i + ft_strlen(src));
 }
-/*
-*** stack smashing detected ***: terminated
-[1]    6957 IOT instruction (core dumped)  ./a.out
-*/
