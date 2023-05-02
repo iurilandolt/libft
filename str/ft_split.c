@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 03:02:53 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/05/02 14:15:45 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/05/02 14:42:39 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,10 +63,8 @@ char	**ft_split(char const *str, char c)
 	int		i;
 	int		j;
 
-	if (!str)
-		return (NULL);
 	split = (char **)malloc((substr_count(str, c) + 1) * sizeof(char *));
-	if (!split)
+	if (!str || !split)
 		return (NULL);
 	sub_i = 0;
 	i = 0;
