@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 23:49:27 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/05/01 11:11:50 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/05/02 13:13:43 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,12 +69,12 @@ t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 int		ft_lstsize(t_list *lst);
-int	ft_printchar(int c);
-int	ft_printstr(char *str);
-int	ft_printnbr(int n);
-int	ft_print_u_nbr(unsigned int n);
-int	ft_printhex(unsigned int i, const char c);
-int	ft_printptr(unsigned long long i);
-int	ft_printf(const char *format, ...);
+int		ft_printchar(int c);
+int		ft_printstr(char *str);
+int		ft_printnbr(int n);
+int		ft_print_u_nbr(unsigned int n);
+int		ft_printhex(unsigned int i, const char c);
+int		ft_printptr(unsigned long long i);
+int		ft_printf(const char *format, ...);
 
 #endif
