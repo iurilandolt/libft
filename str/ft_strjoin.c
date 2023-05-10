@@ -6,7 +6,7 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 16:12:00 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/04/27 13:37:29 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/05/10 15:43:20 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ char	*ft_strjoin(char const *str1, char const *str2)
 		return (NULL);
 	i = -1;
 	j = 0;
-	while (str1[++i])
-		dest[i] = str1[i];
+	while (*(str1 + ++i))
+		*(dest + i) = *(str1 + i);
 	while (str2[j])
-		dest[i++] = str2[j++];
+		*(dest + i++) = *(str2 + j++);
 	*(dest + i) = '\0';
 	return (dest);
 }
