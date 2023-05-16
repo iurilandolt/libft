@@ -84,7 +84,6 @@ char	**ft_split(char const *str, char c)
 
 tried to make counter using ft_chrchr as an int return
 since it returns either NULL or an array position as int
-but it work tho ^^ might try again later
 
 static int	substr_count(const char *str, char c)
 {
