@@ -6,11 +6,11 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 14:50:37 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/05/01 11:11:26 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/04/27 14:53:39 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "ft_printf.h"
 
 int	ft_printchar(int c)
 {

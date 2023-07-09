@@ -6,11 +6,11 @@
 /*   By: rlandolt <rlandolt@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 14:39:46 by rlandolt          #+#    #+#             */
-/*   Updated: 2023/05/01 11:12:05 by rlandolt         ###   ########.fr       */
+/*   Updated: 2023/05/01 10:50:35 by rlandolt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "ft_printf.h"
 
 int	ft_printnbr(int n)
 {
